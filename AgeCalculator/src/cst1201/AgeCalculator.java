@@ -31,12 +31,19 @@ public class AgeCalculator {
 		//First, we need to know how many years to add to the user's current age.
 		//This will be the other year minus the current year.
 		int yearsToAdd = anotherYear - currentYear;
-
+                    
 		//Next, we add the result from above to the user's current age.
 		int newAge = currentAge + yearsToAdd;
+                
+               
 
 		//Finally, display the user's age in this year, but only if it's valid.
-		if (newAge >= 0)
+		if (newAge == 1)
+                    System.out.println("You will be " + newAge + "-year-old in " 
+                            + anotherYear + ".");
+                
+                
+                if (newAge >= 2)
 			System.out.println("You will be " + newAge + "-years-old in "
 				+ anotherYear + ".");
 
